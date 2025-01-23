@@ -2,4 +2,5 @@ Packages in the OPak repository:
 
 1. taskmanagersim - a simple task/reminder app made by ChatGPT
 2. tuxadventure - a fun little game you play as the Linux mascot, Tux :3 (WIP)
-3. pyweb
+3. pyweb - opens a URL in a mini Python browser
+4. pytxt - a simple little text editor made with Python
