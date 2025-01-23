@@ -62,7 +62,7 @@ def openTxtRead(txtfilename):
 if args.command == 'open':
 	os.system("clear")
 	openTxt(args.file)
-elif args.command == 'open':
+elif args.command == 'read':
 	os.system("clear")
 	openTxtRead(args.file)
 else:
