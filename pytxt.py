@@ -31,8 +31,8 @@ def openTxt(txtfilename):
 # Handle the subcommands
 if args.command == 'open':
 	os.system("clear")
-    openTxt(args.file)
+    	openTxt(args.file)
 elif args.command == 'list':
-    list_tasks()
+    	list_tasks()
 else:
-    parser.print_help()
+    	parser.print_help()
