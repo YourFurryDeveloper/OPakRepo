@@ -4,7 +4,7 @@ import argparse
 # Global list to store tasks
 tasks = []
 
-def add_task(task_name):
+def add_task(task_name)
     """Simulate adding a task."""
     tasks.append(task_name)
     print(f"Task '{task_name}' added.")
