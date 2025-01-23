@@ -5,12 +5,12 @@ import argparse
 tasks = []
 
 def add_task(task_name):
-    """Simulate adding a task."""
+    #"""Simulate adding a task."""
     tasks.append(task_name)
     print(f"Task '{task_name}' added.")
 
 def list_tasks():
-    """Simulate listing all tasks."""
+    #"""Simulate listing all tasks."""
     if tasks:
         print("Tasks:")
         for task in tasks:
