@@ -19,7 +19,7 @@ def list_tasks():
         print("No tasks found.")
 
 # Create the main parser
-parser = argparse.ArgumentParser(prog='taskmanagersim', description="Simple task manager")
+parser = argparse.ArgumentParser(prog='taskmanager', description="Simple task manager")
 
 # Create subparsers for the subcommands
 subparsers = parser.add_subparsers(dest='command')
