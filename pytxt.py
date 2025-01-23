@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import os
 
 # Create the main parser
 parser = argparse.ArgumentParser(prog='pytxt', description="Simple text editor made with Python")
@@ -18,15 +19,18 @@ subparsers.add_parser('list', help="List all tasks")
 args = parser.parse_args()
 
 def openTxt(txtfilename):
+	lineNum = 0
 	# Open the file in read mode
 	with open(txtfilename, 'r') as file:
 		# Loop through each line in the file
 		for line in file:
 			# Print the current line
-			print(line.strip())  # .strip() removes leading/trailing whitespace
+			lineNum += 1
+			print(str(lineNum) + ". " + line.strip())  # .strip() removes leading/trailing whitespace
 
 # Handle the subcommands
 if args.command == 'open':
+	os.system("clear")
     openTxt(args.file)
 elif args.command == 'list':
     list_tasks()
